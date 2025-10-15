@@ -3,7 +3,20 @@
 @import "tailwindcss";
 
 @theme {
-    --font-nunito-text: "Nunito", sans-serif;
-    
+    --font-nunito: "Nunito", sans-serif;   
+
+
+    /* Define a custom brand color scale */
+  --color-primary-50: #F0F5FF;
+  --color-primary-100: #E0EFFF;
+  --color-primary-500: #0047FF; /* The "default" shade */
+  --color-primary-900: #002D99;
 }
 
+.card{
+  @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+
+.badge{
+  @apply bg-primary-100 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}

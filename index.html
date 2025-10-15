@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/style.css">
     <title>food_recipe</title>
   </head>
-  <body class="text-gray-600">
+  <body class="text-gray-600 font-nunito">
     <div id="app"> <!--content wrapper -->
       <div>
         <nav>
@@ -36,11 +36,11 @@
         </nav>
       </div> <!-- end nav -->
 
-      <main class="px-16 py-6">
+      <main class="px-16 py-6 bg-gray-100">
 
-        <div>
-          <a href="">Login</a>
-          <a href="">Sing up</a>
+        <div class="flex justify-center md:justify-end ">
+          <a href="" class="text-primary-500">Login</a>
+          <a href="" class="text-primary-500 ml-2">Sing up</a>
         </div>
 
         <header>
@@ -53,12 +53,15 @@
 
           <div class="mt-8">
             <!--Cards-->
-            <div>
-              <img src="img/curry.jpg" alt="Curry">
-              <dialog>
-                <span>5 Bean Chilli Stew</span>
-                <span>Recipe by Mario</span>
-              </dialog>
+            <div class="card">
+              <img src="img/curry.jpg" alt="Curry" class="w-full h-32 sm:h-48 object-cover">
+              <div class="m-4">
+                <span  class="font-bold">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div class="badge">
+                <span>25 min</span>
+              </div>
             </div>
           </div>
 
@@ -69,8 +72,8 @@
 
           </div>
           
-          <div>
-            <div>Load More</div>
+          <div class="flex justify-center">
+            <div class="bg-primary-100">Load More</div>
           </div>
         </div>
 
